@@ -31,8 +31,8 @@ This is a chat application built using Django Rest Framework, HTML, CSS, jQuery,
 
 2. Change directory
 
-    ```
-        cd TeamDota
+    ```bash
+    cd TeamDota\backend
     ```
 
 3. Create virtual environment
@@ -50,16 +50,14 @@ This is a chat application built using Django Rest Framework, HTML, CSS, jQuery,
 5. Install requirement.txt
 
     ```bash
-        pip install -r requirements.txt
-    ```
-
-6. Start the development server:
-
-    ```cd backend
-        python manage.py runserver
+    pip install -r requirements.txt
     ```
 
 4. Run migrations:
+
+    ```bash
+    python manage.py makemigrations
+    ```
 
     ```bash
     python manage.py migrate
