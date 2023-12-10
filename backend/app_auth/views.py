@@ -21,7 +21,7 @@ def user_login(request):
 
         return JsonResponse({'success': True, 'message': 'Login successful', 'token': str(token)})
     else:
-        return JsonResponse({'message': 'Invalid credentials'}, status=401)
+        return JsonResponse({'success': False, 'message': 'Invalid credentials'}, status=401)
     
 
 @api_view(['POST'])

@@ -58,10 +58,10 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",  # or your frontend's URL
-    "http://127.0.0.1:3000",  # or your frontend's URL
     "http://127.0.0.1:8000",  # or your backend's URL
 ]
+
+CORS_ALLOW_ALL_ORIGINS = True  # Allow all origins for development
 
 CORS_ALLOW_METHODS = [
     'GET',
