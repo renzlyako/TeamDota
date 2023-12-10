@@ -19,7 +19,7 @@ def user_login(request):
 
         token, _ = AuthToken.objects.create(user)
 
-        return JsonResponse({'message': 'Login successful', 'token': str(token)})
+        return JsonResponse({'success': True, 'message': 'Login successful', 'token': str(token)})
     else:
         return JsonResponse({'message': 'Invalid credentials'}, status=401)
     

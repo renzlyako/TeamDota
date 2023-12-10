@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TeamDota-Login</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <script>
+    params = {
+      "username": "renz",
+      "password": "admin"
+    }
+    $.ajax({
+      url: "http://127.0.0.1:8000/api/auth/user-login/",
+      method: "POST",
+      data: params,
+      dataType: "json",
+      success: function(data) {
+        console.log(data);
+      },
+      error: function(error) {
+        console.error(error);
+      }
+    });
+  </script>
+</body>
+</html>
