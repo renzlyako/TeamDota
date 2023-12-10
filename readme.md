@@ -27,7 +27,7 @@ This is a chat application built using Django Rest Framework, HTML, CSS, jQuery,
 1. Clone the repository:
 
     ```bash
-    git clone hhttps://github.com/renzlyako/TeamDota.git
+    git clone https://github.com/renzlyako/TeamDota.git
 
 2. Change directory
 
